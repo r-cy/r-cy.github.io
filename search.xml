@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>github和hexo搭建个人博客</title>
+    <url>/2023/11/05/github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p><a href="https://mp.weixin.qq.com/s?__biz=MzAxMjA0MDk2OA==&mid=2449472336&idx=1&sn=a79d3bca5a9f221d46e7860ccc240e4b&chksm=8fbcb537b8cb3c210e4621c81a774215831c25f234f67f66c8af1a6dcd3e205bd7d2475196df&scene=132&exptype=timeline_recommend_article_extendread_samebiz#wechat_redirect">用 GitHub + Hexo 免费搭建博客，保姆级教程</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/618864711">Hexo+Next主题搭建个人博客+优化全过程（完整详细版）</a><br>#目录<br>node_modules: 依赖包<br>public：存放生成的页面<br>scaffolds：生成文章的一些模板<br>source：用来存放你的文章<br>themes：主题</p>
+<p>#常用命令<br>hexo clean 清楚生成的静态文件<br>hexo g     生成静态文件<br>hexo s     启动服务 默认访问<a href="http://localhost:4000/">http://localhost:4000</a><br>heox d     发布到关联的github仓库r-cy.github.io  发布前先执行hexo g</p>
+<p>new<br>在 根目录中，git bash黑窗口中输入</p>
+<p>hexo new “博客名称”<br>然后打开 blog&#x2F;source&#x2F;_posts&#x2F; 文件夹后，你的 博客名称的md文档就创建好，直接打开编写即可，可以添加一些标签给这个文章，如 tags：编程技术</p>
+<p>41RUPGX8K3M5OXOTM.png</p>
+<p>clean<br>$ hexo clean<br>清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p>
+<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<p>generate<br>$ hexo generate<br>生成静态文件。</p>
+<p>选项	描述<br>-d, –deploy	文件生成后立即部署网站<br>-w, –watch	监视文件变动<br>-b, –bail	生成过程中如果发生任何未处理的异常则抛出异常<br>-f, –force	强制重新生成文件 Hexo 引入了差分机制，如果 public 目录存在，那么 hexo g 只会重新生成改动的文件。 使用该参数的效果接近 hexo clean &amp;&amp; hexo generate<br>-c, –concurrency	最大同时生成文件的数量，默认无限制<br>该命令可以简写为</p>
+<p>$ hexo g<br>server<br>$ hexo server<br>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a></p>
+<p>选项	描述<br>-p, –port	重设端口<br>-s, –static	只使用静态文件<br>-l, –log	启动日记记录，使用覆盖记录格式<br>该命令可以简写为：</p>
+<p>$ hexo s<br>deploy<br>$ hexo deploy<br>部署网站，构建在GitHub的服务器中。</p>
+<p>参数	描述<br>-g, –generate	部署之前预先生成静态文件<br>该命令可以简写为：</p>
+<p>$ hexo d<br>命令配合使用，重新构建网站（release）：</p>
+<p>hexo clean<br>hexo g -d<br>访问离线的端口（debug）：</p>
+<p>hexo g<br>hexo s</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/11/05/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
